@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+}
+.wrap{
+  text-align: center;
+  padding-top: 40px;
+}
+.menu{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.underline{
+    width: 70px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+.btnArea{
+    margin-bottom: 30px;
+}
+.active{
+    background-color:#c59d5f;
+    color: #fff;
+}
+.btnArea button{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius:0.5rem;
+    border: 2px solid #c59d5f;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btnArea button:hover{
+    color: #fff;
+    background-color: #c59d5f;
+}
+.menus{
+    display: grid;
+    grid-template-columns:1fr;
+    padding-left: 30px;
+    row-gap: 20px;
+    height: auto;
+}
+.eachMenu{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #333;
+}
+.imgContainer{
+    width: 100%;
+    height: 150px;
+    
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border:5px solid #c59d5f;
+}
+.price{
+    color: #c59d5f;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 20px;
+}
+.title{
+    letter-spacing: 2px;
+    color: #fff;
+}
+.desc{
+    font-size: 20px;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 2px;
+}
+
+.line{
+    border: 0.1px dotted #e5e2e2;
+    margin-bottom: 20px;
+}
+.addOrder{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.addOrder button{
+    padding: 5px;
+    border: 3px solid #c59d5f;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    font-family:monospace;
+    color: #e5e2e2;
+}
+.addOrder button:hover{
+    color: #e5e2e2;
+    background-color: #ba883c;
+}
+@media(min-width:1000px){
+    .addOrder{
+        margin-top: -1px;
+    }
+    .addOrder button{
+        font-size: 12px;
+        font-weight: 100;
+        color: #333;
+    }
+    .menus{
+        grid-template-columns:repeat(2,1fr);
+        padding-left: 100px;
+    }
+    .title{
+        color: #333;
+    }
+    .eachMenu{
+        width: 90%;
+        display: flex;    
+        padding-left:20px ;
+        padding-right: 20px;
+        margin-left: -100px;
+        height: 250px;
+        background-color: #fff;
+    }
+
+    .imgContainer{
+        width: 300px;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    .footer{
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+    }
+    .info{
+        width: 300px; 
+        font-size: 15px;
+    }
+    .desc{
+        width: 300px;
+        line-height: 25px;
+        font-size: 15px;
+        word-spacing: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    .line{
+        width: 310px;
+    }
+
+}

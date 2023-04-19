@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    background: linear-gradient(#999,#fff);
+    align-items: center;
+    position: fixed;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgb(83, 83, 155) ;
+}
+
+.logo span{
+    color: #ba883c;
+}
+.orderNumber{
+    color: red;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul a{
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+ul :nth-last-child(2){
+    color: red;
+}
+@media(min-width:900px){
+    .navbar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
