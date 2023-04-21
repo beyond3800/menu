@@ -59,6 +59,14 @@ import { useState } from "react";
      const updateOrder = (currOrder,orderId) =>{
         setOrders(prevOrder=>({...prevOrder,[orderId]:currOrder}))
      }
+     const clearOrder =()=>{
+      setOrderAmount(0)
+       setOrders(getOrder())
+     }
+
+     const checkOut = () =>{
+        console.log(orders)
+     }
     
     const context ={
         menu,
@@ -69,6 +77,8 @@ import { useState } from "react";
         orders,
         updateOrder,
         orderAmount,
+        clearOrder,
+        checkOut,
     }
 
     return(

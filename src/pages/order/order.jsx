@@ -7,7 +7,13 @@ import { EachOrder } from "./eachOrder";
 
 
 export const Order=()=>{
-  const {orders,getOrderAmount,orderAmount} = useContext(MenuContext)
+  const {
+    orders,
+    getOrderAmount,
+    orderAmount,
+    clearOrder,
+    checkOut,
+  } = useContext(MenuContext)
   
     return(
         <div className="wrap">
@@ -22,11 +28,25 @@ export const Order=()=>{
             }
           
           </div>
+          <div className="">
+           
           {
               getOrderAmount()==0?<div className="noOrder">No order yet</div>: 
               <div className="totalAmount">Subtotal:<span>${Math.ceil( getOrderAmount())}</span></div>
               
             }
+            {
+         getOrderAmount()==0? <div className="nonm"></div>:
+         <div className="footer">
+          <button className="clearOrder" onClick={clearOrder}>ClearOrder</button>
+          <button className="checkout" onClick={checkOut}>CheckOut</button>
+         </div>
+                                 
+         
+            }
+
+          </div>
+        
         </div>
     )
 }

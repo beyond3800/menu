@@ -13,9 +13,7 @@ export const Navbar = () =>{
             <ul>
                 <li> <Link to='/'>Menu</Link></li>
                 <li><Link to='order'> <ShoppingBagOpen size={30}/><span className="orderNumber">{orderAmount===0?'':orderAmount}</span> Orders</Link></li>
-            </ul>
-           
-            
+            </ul> 
         </div>
     )
 }

@@ -21,7 +21,6 @@ export const Menu = () => {
             <div className="menus">
                 {menu.map(each=><EachMenu key={each.id} data={each}/>)}
             </div>
-
         </div>
     </div>
    )
