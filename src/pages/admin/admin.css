@@ -1,0 +1,56 @@
+header{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #444;
+}
+.adminList{
+    margin-top: 20px;
+    padding-left: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.adminList a{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.eachCustomer{
+    margin-top: 20px;
+    /* padding-left: 40px; */
+    text-transform: capitalize;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.eachCustomer .info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #333;
+}
+.info h3{
+    padding-left: 30px;
+    font-weight: 400;
+}
+.info span{
+    padding-right: 10px;
+    overflow: auto;
+}
+.totalCustomer{
+    margin-top: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+@media(min-width:700px){
+    .customersList{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .info{
+        width: 100%;
+    }
+}
+

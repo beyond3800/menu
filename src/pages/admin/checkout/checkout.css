@@ -1,0 +1,67 @@
+.checkoutProduct{
+    padding: 10px 30px;
+}
+.checkImg{
+    width: 100%;
+    height: 250px;
+}
+.checkImg img{
+    width: 100%;
+    height: 100%;
+}
+.eachCheckout{
+    border: solid 1px #444;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 40px;
+    background: #fff;
+}
+
+.checkQuatity,.checkPrice{
+    font-size: 25px;
+    font-weight: 200;
+    color: #555;
+    text-transform: capitalize;
+}
+.customerName{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.checkFooter{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.checkBtn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.checkBtn button{
+    padding: 5px 10px;
+    background: rgb(87, 173, 87);
+    border: none;
+    color: #222;
+}
+.checkBtn button:hover{
+    background: greenyellow;
+}
+
+@media(min-width:700px){
+    .checkoutOrders{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 20px;
+    }
+    .eachCheckout{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

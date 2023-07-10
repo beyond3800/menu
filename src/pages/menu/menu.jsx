@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './menu.css'
 import { useContext } from "react";
 import { MenuContext } from "../../context/menuContext";
 import { EachMenu } from "./eachMenu";
+import { useNavigate } from "react-router-dom";
 
 export const Menu = () => {
-    const {menu,fliteringMenu} = useContext(MenuContext)
+    const {menu,fliteringMenu,btnRef} = useContext(MenuContext)
+
+
    return(
     <div className="wrap">
         <div className="menu">
             <h1>Our Menu</h1>
             <div className="underline"></div>
-            <div className="btnArea">
+            <div className="btnArea" ref={btnRef}>
                 <button onClick={(evt)=>fliteringMenu(evt)} name="all" id="btn">All</button>
                 <button onClick={(evt)=>fliteringMenu(evt)} name="breakfast" id="btn">Breakfast</button>
                 <button onClick={(evt)=>fliteringMenu(evt)} name="lunch" id="btn">Lunch</button>

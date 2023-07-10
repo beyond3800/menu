@@ -5,7 +5,9 @@ import { Plus,Minus } from "phosphor-react";
 
 export const EachOrder = (props) =>{
     const{removeFromOrder,addOrder,orders,updateOrder} = useContext(MenuContext)
-    const{img,id,price,title} = (props.data)
+    const{title,img,category,price,id} = (props.data)
+    // console.log(props)
+    // console.log(img,id,price,title)
     return(
         <div className="eachOrder">
             <div className="orderTitle">{title}</div>
@@ -17,10 +19,10 @@ export const EachOrder = (props) =>{
             <div className="priceOrder">${price}</div>
             <div className="btnOrderArea">
               <button onClick={()=>addOrder(id)}> <Plus /> </button>
-              <input type="text" value={orders[id]} onChange={(e)=>updateOrder(Number(e.target.value),id)}/>
+              {/* <textarea name="" id="" cols="5" rows="1" value={Number(orders[id])}></textarea> */}
+              <input type="text" value={Number(orders[id])} onChange={()=>updateOrder()}/>
               <button><Minus onClick={()=>removeFromOrder(id)}/></button>
-            </div>
-            
+            </div> 
         </div>
     )
 }
